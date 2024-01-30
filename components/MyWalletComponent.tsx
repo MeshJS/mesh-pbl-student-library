@@ -5,7 +5,7 @@ export default function MyWalletComponent() {
 
   return (
     <div>
-      <h2>This is my wallet component!</h2>
+      <h2 className="text-2xl font-bold py-5">This is my wallet component!</h2>
       <pre>{JSON.stringify(wallet, null, 2)}</pre>
     </div>
   );
