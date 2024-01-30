@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { CardanoWallet, MeshBadge } from "@meshsdk/react";
+import MyWalletComponent from "../components/MyWalletComponent";
+import MyWalletAssetComponent from "../components/MyWalletAssetComponent";
 
 export default function Home() {
   return (
@@ -25,6 +27,14 @@ export default function Home() {
 
         <div className="demo">
           <CardanoWallet />
+        </div>
+
+        <div className="demo">
+          <MyWalletComponent />
+        </div>
+
+        <div className="demo">
+          <MyWalletAssetComponent />
         </div>
 
         <div className="grid">
