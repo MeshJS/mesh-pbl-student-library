@@ -1,0 +1,47 @@
+{
+  "preamble": {
+    "title": "mesh-pbl/contracts",
+    "description": "Aiken contracts for project 'mesh-pbl/contracts'",
+    "version": "0.0.0",
+    "plutusVersion": "v2",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.0.24-alpha+982eff4"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "mint_with_contract.mint_with_contract",
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/mint_with_contract~1MintRedeemer"
+        }
+      },
+      "compiledCode": "587e01000032323232323232322232533300632323253330093370e90001804000899b8f375c601a600e00c911046d6573680016300c001300c001300400214984d958c94ccc018cdc3a400000226464a666016601a0042930b1bae300b0013004003163004002230053754002460066ea80055cd2ab9d5573caae7d5d0aba21",
+      "hash": "78156c97c3314892e0ea16efe2e1a8fe0ef6a43b4ec481a33a970a4a"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "mint_with_contract/MintRedeemer": {
+      "title": "MintRedeemer",
+      "anyOf": [
+        {
+          "title": "MintRedeemer",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "message",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

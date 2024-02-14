@@ -1,0 +1,14 @@
+name = "mesh-pbl/contracts"
+version = "0.0.0"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'mesh-pbl/contracts'"
+
+[repository]
+user = "mesh-pbl"
+project = "contracts"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "1.7.0"
+source = "github"
