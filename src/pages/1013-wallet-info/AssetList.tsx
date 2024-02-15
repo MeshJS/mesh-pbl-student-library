@@ -15,7 +15,7 @@ export default function AssetList() {
         {assets &&
           assets.map((asset: Asset, index) => (
             <div key={index} className="bg-white text-black p-5">
-              <p>{asset.assetName}</p>
+              <p>{asset.unit}</p>
               <p>{asset.quantity}</p>
             </div>
           ))}

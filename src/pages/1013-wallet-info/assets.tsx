@@ -1,6 +1,5 @@
 import Head from "next/head";
-import { CardanoWallet, MeshBadge } from "@meshsdk/react";
-import AssetList from "../components/contributions/example/AssetList";
+import AssetList from "./AssetList";
 
 export default function AssetPage() {
   return (
