@@ -35,9 +35,6 @@ function MintForgeScript() {
     // create forgingScript
     const forgingScript = ForgeScript.withOneSignature(address);
 
-    // create transaction
-    const tx = new Transaction({ initiator: wallet });
-
     const asset: Mint = {
       assetName: "MeshToken",
       assetQuantity: "1",
@@ -46,6 +43,8 @@ function MintForgeScript() {
       recipient: address,
     };
 
+    // create transaction
+    const tx = new Transaction({ initiator: wallet });
     tx.mintAsset(forgingScript, asset);
 
     const unsignedTx = await tx.build();
@@ -76,7 +75,6 @@ function MintNativeScript() {
   async function mint() {
     setLoading(true);
 
-    // prepare forgingScript
     const usedAddress = await wallet.getUsedAddresses();
     const address = usedAddress[0];
 
@@ -105,8 +103,6 @@ function MintNativeScript() {
 
     // create transaction
 
-    const tx = new Transaction({ initiator: wallet });
-
     const asset: Mint = {
       assetName: "MeshToken",
       assetQuantity: "1",
@@ -115,8 +111,8 @@ function MintNativeScript() {
       recipient: address,
     };
 
+    const tx = new Transaction({ initiator: wallet });
     tx.mintAsset(forgingScript, asset);
-
     tx.setTimeToExpire(slot);
 
     const unsignedTx = await tx.build();
