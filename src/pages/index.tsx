@@ -34,6 +34,11 @@ const demos = [
     description: "Create a multi-sig transaction.",
     url: "2004-multi-sig-transaction",
   },
+  {
+    title: "Sign message (200.7)",
+    description: "Sign a message using the wallet.",
+    url: "2007-sign-message",
+  },
 ];
 
 export default function Home() {
@@ -66,7 +71,6 @@ function DemoCard({
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
-      {/* <CardContent>sss</CardContent> */}
       <CardFooter className="flex justify-between">
         <Link href={url}>
           <Button>Explore</Button>
