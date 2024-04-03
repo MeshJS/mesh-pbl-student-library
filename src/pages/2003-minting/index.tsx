@@ -2,11 +2,11 @@ import { CardanoWallet, useWallet } from "@meshsdk/react";
 import MintingNativeScript from "./native-script";
 import MintingPlutusScript from "./plutus-script";
 
-export default function Minting() {
+export default function Page() {
   const { connected } = useWallet();
 
   return (
-    <main>
+    <div className="flex gap-4">
       {connected ? (
         <>
           <MintingNativeScript />
@@ -15,6 +15,6 @@ export default function Minting() {
       ) : (
         <CardanoWallet />
       )}
-    </main>
+    </div>
   );
 }

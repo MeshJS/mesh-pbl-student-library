@@ -5,7 +5,7 @@ import plutusScript from "./contract/plutus.json";
 import cbor from "cbor";
 import { type PlutusScript, Transaction, Mint } from "@meshsdk/core";
 import { assetMetadata } from "@/components/mesh/asset-metadata";
-import Button from "@/components/ui/button";
+import ButtonDemo from "@/components/ButtonDemo";
 
 export default function MintingPlutusScript() {
   const { wallet } = useWallet();
@@ -51,12 +51,11 @@ export default function MintingPlutusScript() {
   }
 
   return (
-    <Button
-      onClick={() => mint()}
-      disabled={loading}
-      color={loading ? "orange" : success ? "green" : "white"}
-    >
-      Mint with Plutus Script
-    </Button>
+    <ButtonDemo
+      fn={() => mint()}
+      label="Mint with Plutus Script"
+      loading={loading}
+      success={success}
+    />
   );
 }

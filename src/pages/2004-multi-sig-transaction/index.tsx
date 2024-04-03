@@ -12,7 +12,7 @@ import {
 } from "@meshsdk/core";
 import { assetMetadata } from "@/components/mesh/asset-metadata";
 import { walletMnemonic } from "@/components/mesh/wallet-mnemonic";
-import Button from "@/components/ui/button";
+import ButtonDemo from "@/components/ButtonDemo";
 
 const Home: NextPage = () => {
   const { connected } = useWallet();
@@ -93,13 +93,12 @@ function MintSection() {
           )}
         </>
       ) : (
-        <Button
-          onClick={() => startMinting()}
-          disabled={loading}
-          color={loading ? "orange" : success ? "green" : "white"}
-        >
-          Mint Token
-        </Button>
+        <ButtonDemo
+          fn={() => startMinting()}
+          label="Mint Token"
+          loading={loading}
+          success={success}
+        />
       )}
     </>
   );

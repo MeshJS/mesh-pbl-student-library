@@ -1,5 +1,5 @@
+import ButtonDemo from "@/components/ButtonDemo";
 import { assetMetadata } from "@/components/mesh/asset-metadata";
-import Button from "@/components/ui/button";
 import {
   type Mint,
   ForgeScript,
@@ -57,13 +57,12 @@ function MintForgeScript() {
   }
 
   return (
-    <Button
-      onClick={() => mint()}
-      disabled={loading}
-      color={loading ? "orange" : success ? "green" : "white"}
-    >
-      Mint with One Signature
-    </Button>
+    <ButtonDemo
+      fn={() => mint()}
+      label="Mint with One Signature"
+      loading={loading}
+      success={success}
+    />
   );
 }
 
@@ -123,14 +122,11 @@ function MintNativeScript() {
   }
 
   return (
-    <>
-      <Button
-        onClick={() => mint()}
-        disabled={loading}
-        color={loading ? "orange" : success ? "green" : "white"}
-      >
-        Mint with Native Script
-      </Button>
-    </>
+    <ButtonDemo
+      fn={() => mint()}
+      label="Mint with Native Script"
+      loading={loading}
+      success={success}
+    />
   );
 }
