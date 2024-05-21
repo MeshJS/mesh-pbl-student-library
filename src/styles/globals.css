@@ -73,4 +73,8 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  a {
+    @apply text-indigo-700 hover:text-indigo-900;
+  }
 }

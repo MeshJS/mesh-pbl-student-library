@@ -22,7 +22,7 @@ const demos = [
   {
     title: "Using Resolvers (102.2)",
     description: "Helpful functions for building dApps.",
-    url: "1022-utilities-providers",
+    url: "1022-utilities-resolvers",
   },
   {
     title: "Basic transaction (200.1)",
