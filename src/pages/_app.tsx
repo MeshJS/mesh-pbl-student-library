@@ -7,7 +7,8 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <MeshProvider>
       <Layout>
-      <Component {...pageProps} /></Layout>
+        <Component {...pageProps} />
+      </Layout>
     </MeshProvider>
   );
 }

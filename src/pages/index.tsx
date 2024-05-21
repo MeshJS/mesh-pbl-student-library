@@ -15,6 +15,16 @@ const demos = [
     url: "1013-wallet-info",
   },
   {
+    title: "Using Providers (102.1)",
+    description: "Get information about the blockchain.",
+    url: "1021-utilities-providers",
+  },
+  {
+    title: "Using Resolvers (102.2)",
+    description: "Helpful functions for building dApps.",
+    url: "1022-utilities-providers",
+  },
+  {
     title: "Basic transaction (200.1)",
     description: "Send ADA from one or more addresses",
     url: "2001-basic-transaction",
