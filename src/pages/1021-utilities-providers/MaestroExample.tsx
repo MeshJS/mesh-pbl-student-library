@@ -5,7 +5,7 @@ import { useQuery } from "@tanstack/react-query";
 import Link from "next/link";
 import { useState } from "react";
 
-// Add your Blockfrost API Key here:
+// Add your Maestro API Key here:
 const maestroApiKey = "";
 
 export default function MaestroExample() {
