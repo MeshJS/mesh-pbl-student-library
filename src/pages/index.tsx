@@ -45,9 +45,24 @@ const demos = [
     url: "2004-multi-sig-transaction",
   },
   {
+    title: "Smart contract (200.5)",
+    description: "Lock and redeem assets using a smart contract.",
+    url: "2005-smart-contract",
+  },
+  {
+    title: "Register and delegate stakepool (200.6)",
+    description: "Register wallet address and delegate to a stake pool.",
+    url: "2006-stake",
+  },
+  {
     title: "Sign message (200.7)",
     description: "Sign a message using the wallet.",
     url: "2007-sign-message",
+  },
+  {
+    title: "Mesh wallet (201.1 & 201.2)",
+    description: "Load Mesh wallet and send lovelace",
+    url: "2012-mesh-wallet",
   },
 ];
 
